@@ -1,0 +1,48 @@
+Project: Image Manipulation
+
+Objective: Create a program that allows users to perform basic image manipulation operations using NumPy.
+
+Features to include:
+
+Image loading: Load an image file into a NumPy array.
+
+Image resizing: Resize the image array to a specified width and height.
+
+Image cropping: Allow users to select a rectangular region of interest (ROI) in the image and crop the array accordingly.
+
+Image rotation: Rotate the image array by a specified angle.
+
+Image flipping: Flip the image horizontally or vertically.
+
+Image grayscale conversion: Convert the image array to grayscale.
+
+Image color inversion: Invert the color values of the image.
+
+Image blending: Blend two images together by combining their pixel values.
+
+Image display: Display the modified image using matplotlib or any other library of your choice.
+
+Image saving: Save the modified image array as a new image file.
+
+You can implement these features as separate functions or methods within a class.
+You can also add additional functionalities or modify the project as per your requirements.
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+will use
+
+
+NumPy
+
+PIL/Pillow
+
+Matplotlib
+
+OpenCV
