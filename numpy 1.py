@@ -89,6 +89,11 @@ import pyscreenshot as ss
 #
 # print(arr_lin)
 
+# --------eye()--------
+
+# a = np.eye(3,3,k = 0)
+# print(a)
+
 
 # ---------Random valued arrays--------
 
@@ -861,3 +866,123 @@ import pyscreenshot as ss
 #
 # print("Determinate of b matrix : \n ",np.linalg.det(b))
 
+
+#-----------Copy NumPy array into another array--------
+
+#using empty_like()
+
+
+# importing Numpy package
+# import numpy as np
+#
+# # Creating a numpy array using np.array()
+# ary = np.array([13, 99, 100, 34, 65, 11,
+# 				66, 81, 632, 44])
+#
+# print("Original array: ")
+#
+# # printing the Numpy array
+# print(ary)
+#
+# # Creating an empty Numpy array similar
+# # to ary
+# copy = np.empty_like(ary)
+#
+# print("copy : \n",copy)
+# # Now assign ary to copy
+# copy[:] = ary
+#
+# print("\nCopy of the given array: ")
+#
+# # printing the copied array
+# print(copy)
+
+# using copy()
+
+
+# ary = np.array([13, 99, 100, 34, 65, 11,
+# 				66, 81, 632, 44])
+#
+# print("Original array: ")
+#
+# print(ary)
+#
+# copy = np.copy(ary)
+#
+# print("\nCopy of the given array: ")
+#
+# # printing the copied array
+# print(copy)
+
+
+
+# using assignment operator
+
+
+# ary = np.array([13, 99, 100, 34, 65, 11,
+# 				66, 81, 632, 44])
+#
+# print("Original array: ")
+#
+# print(ary)
+#
+# copy1 = ary
+#
+# ary[4] = 78
+#
+# print("\nCopy of the given array: ")
+#
+# # printing the copied array
+# print(copy1)
+
+
+
+# ------------swap columns of a given NumPy array---------------
+
+#
+# my_array = np.arange(12).reshape(4, 3)
+# print("Original array:")
+# print(my_array)
+#
+# my_array[:, [2, 0]] = my_array[:, [0, 2]]
+# print("After swapping arrays the last column and first column:")
+# print(my_array)
+
+
+# -------Insert new axis to the array---
+
+# using numpy.newaxis() function
+
+#
+# arr = np.arange(5*5).reshape(5, 5)
+# print(arr.shape)
+#
+# # promoting 2D array to a 5D array
+# # arr[None, ..., None, None]
+# arr_5D = arr[np.newaxis, ..., np.newaxis, np.newaxis]
+#
+# print(arr_5D.shape)
+
+
+# using np.expand_dims() function
+
+# x = np.zeros((3, 4))
+#
+# print(x)
+# print()
+# y = np.expand_dims(x, axis=1)
+# print(y)
+# print()
+# print("shape of y : ",y.shape)
+
+
+arr = np.arange(5*5).reshape(5,5)
+print(arr)
+print()
+print(arr.shape)
+
+newaxes = (0, 3, -1)
+arr_5D = np.expand_dims(arr, axis=2)
+print(arr_5D)
+print()
+print(arr_5D.shape)
